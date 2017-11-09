@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+# tau
 
-You can use the [editor on GitHub](https://github.com/awm/tau/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+A tool for selecting resistors and capacitors to achieve a given RC time
+constant.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This tool may be found online at https://tau.sigmadraconis.ca.
 
-### Markdown
+## Resources
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Components
 
-```markdown
-Syntax highlighted code block
+ * [Standard Resistor Values - RF Cafe][1]
+ * [Standard Capacitor Values & Color Codes - RF Cafe][2]
+ * [Wikipedia: E-series of preferred numbers][3]
 
-# Header 1
-## Header 2
-### Header 3
+[1]: http://www.rfcafe.com/references/electrical/resistor-values.htm
+[2]: http://www.rfcafe.com/references/electrical/capacitor-values.htm
+[3]: https://en.wikipedia.org/wiki/E-series_of_preferred_numbers
 
-- Bulleted
-- List
+### Development
 
-1. Numbered
-2. List
+ * [formBuilder][4] - For initial form layout design and styles.
+ * [jQuery][5] - For DOM access and manipulation.
+ * [MathJax][6] - For displaying mathematical formulae.
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/awm/tau/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[4]: https://formbuilder.online/
+[5]: http://jquery.com/
+[6]: https://www.mathjax.org/
