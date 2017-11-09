@@ -19,7 +19,11 @@ function tau(params) {
         }
     }
     return results.sort(function(a, b) {
-        return a['delta'] - b['delta'];
+        var diff = a['delta'] - b['delta'];
+        if (diff === 0.0) {
+            return b['R'] - a['R'];
+        }
+        return diff;
     });
 }
 

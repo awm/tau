@@ -15,8 +15,8 @@ provide both component values and show how to determine the time constant (τ)
 from them, or they arbitrarily fix one of the values (for example, setting the
 resistor to 10 kΩ) to determine the other.  The calculator presented below takes
 advantage of the fact that resistors and capacitors come in fairly standardized
-values, and so there is a finite pool of combinations that can be assembled
-(less than 65k, which is peanuts for modern computers).
+values, and so there is a relatively small finite pool of combinations that can
+be assembled.
 
 Given the desired τ value and resistor tolerance (which determines the pool of
 available resistances), this calculator provides all combinations of R and C
@@ -97,7 +97,11 @@ value.
 ### Results
 
 Results are shown in order of the difference from the desired τ value, from
-smallest to largest.
+smallest to largest.  Where the calculated τ values are the same, the entries
+are organized by descending resistance value, as generally the larger resistance
+will give a lower current draw and a physically smaller capacitor.  This is a
+suggestion only, and you should use components that make sense in your
+application.
 
 <table id="result-table">
     <thead>
@@ -113,6 +117,11 @@ smallest to largest.
         </tr>
     </tbody>
 </table>
+
+These results are not guaranteed to be error-free or suitable for any specific
+purpose.
+
+----
 
 ### Resistors
 
