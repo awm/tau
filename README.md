@@ -3,7 +3,7 @@
 A tool for selecting resistors and capacitors to achieve a given RC time
 constant.
 
-This tool may be found online at https://tau.sigmadraconis.ca.
+This tool may be found online at http://tau.sigmadraconis.ca.
 
 ## Resources
 
