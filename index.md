@@ -32,7 +32,7 @@ value.
                 <span class="tooltip-element" tooltip="Enter the desired RC time constant in seconds.">?
                 </span>
             </label>
-            <input type="text" placeholder="1e-3" class="form-control" name="tau" value="1e-3" id="tau" title="Enter the desired RC time constant in seconds." required="required" aria-required="true">
+            <input type="text" class="form-control" name="tau" value="1e-3" id="tau" title="Enter the desired RC time constant in seconds." required="required" aria-required="true">
         </div>
         <div class="fb-number form-group field-tau-tolerance">
             <label for="tau-tolerance" class="fb-number-label">τ Tolerance (%)
