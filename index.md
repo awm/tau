@@ -109,11 +109,12 @@ application.
             <th>R</th>
             <th>C</th>
             <th>τ</th>
+            <th>Δ</th>
         </tr>
     </thead>
     <tbody id="result-body">
         <tr>
-            <td colspan="3" style="text-align: center;">No results.</td>
+            <td colspan="4" style="text-align: center;">No results.</td>
         </tr>
     </tbody>
 </table>

@@ -111,14 +111,21 @@ function format_tau(t) {
     return +t.toPrecision(5) + ' ';
 }
 
-function format_result(result) {
+function format_delta(delta, t) {
+    var percent = delta / t * 100.0
+    return percent.toFixed(1);
+}
+
+function format_result(result, t) {
     var row = '        <tr><td>';
     row += format_resistance(result['R']);
     row += 'Ω</td><td>';
     row += format_capacitance(result['C']);
     row += 'F</td><td>';
     row += format_tau(result['tau']);
-    row += 's</td></tr>\n';
+    row += 's</td><td>';
+    row += format_delta(result['delta'], t);
+    row += '%</td></tr>\n';
     return row;
 }
 
@@ -142,12 +149,12 @@ $(function () {
         tbody.empty();
         if (results.length === 0) {
             console.log('No results')
-            tbody.append('        <tr><td colspan="3" style="text-align: center;">No results.</td></tr>\n');
+            tbody.append('        <tr><td colspan="4" style="text-align: center;">No results.</td></tr>\n');
         }
         else {
             console.log('%d results', results.length);
             for (var i = 0; i < results.length; ++i) {
-                var row = format_result(results[i]);
+                var row = format_result(results[i], t);
                 tbody.append(row);
             }
         }
